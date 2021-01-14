@@ -1,0 +1,101 @@
+PERANCANGANPERANCANGAN DEFIN
+
+TENTANG SISTEM
+Sistem pakar diagnosa penyakit gigi menggunakan metode Certainly Factor (CF).
+
+PENGGUNA SISTEM
+1. Admin
+2. Pasien
+3. Pengunjung
+
+KEBUTUHAN FUNGSIONAL
+Admin
+-----
+1. Login dan logout
+2. Mengelola profil (Tampil, Ubah)
+3. Mengelola pasien (Tampil)
+4. Mengelola penyakit (Tampil, Tambah, Ubah, Hapus)
+5. Mengelola gejala (Tampil, Tambah, Ubah, Hapus)
+6. Mengelola obat (Tampil, Tambah, Ubah, Hapus)
+7. Mengelola obatpenyakit (Tampil, Tambah, Ubah, Hapus)
+8. Mengelola pengetahuan (Tampil, Tambah, Ubah, Hapus)
+	*id_pengetahuaan, id_penyakit, id_gejala, bobot_mendekati, bobot_menjauhi
+9. Mengelola rekammedis (Tampil, Print)
+10. Mengelola pengaturan (Tampil, Ubah)
+
+Pasien
+1. Login dan logout
+2. Mengelola profil
+3. Konsultasi
+4. Tampil rekam medis
+
+Pengunjung
+----------
+1. Melihat halaman pengunjung
+2. Daftar menjadi pasien
+	*daftar menjadi pasien lewat web. Yg diisi data nama, email, dll (TANPA PASSWORD). Setelah itu, sistem mengirikan email ke pendaftar. Password ada di dalam email tersebut.
+	*Lalu pasien bisa login dengan mengisi password dr email
+
+
+MEMBUAT DATABASE : 
+
+admin
+-----
+- id_admin
+- username_admin
+- password_admin
+
+pasien
+------
+- id_pasien
+- nama_pasien
+- alamat_pasien
+- umur_pasien
+- email_pasien
+- password_pasien
+
+penyakit
+---------
+- id_penyakit
+- nama_penyakit
+- deskripsi_penyakit
+- pencegahan_penyakit
+- foto_penyakit
+
+gejala
+------
+- id_gejala
+- nama_gejala
+
+obat
+----
+- id_obat
+- nama_obat
+
+obatpenyakit
+------------
+- id_obatpenyakit
+- id_penyakit
+- id_obat
+
+pengetahuan
+-----------
+- id_pengetahuan
+- id_penyakit
+- id_gejala
+- bobot_mendekati
+- bobot_menjauhi
+
+rekammedis
+----------
+- id_rekammedis
+- id_pasien
+- id_penyakit
+- tanggal_rekammedis
+
+pengaturan
+----------
+- id_pengaturan
+- judul_pengaturan
+- deskripsi_pengaturan
+- foto _pengaturan

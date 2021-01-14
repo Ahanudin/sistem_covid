@@ -1,0 +1,259 @@
+body	
+{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper
+{
+	width: 100% ;
+	height: 1000% ;
+}
+.navbar
+{
+	margin-bottom: 0px;
+	background: #005C9F;
+	font-weight: bold;
+	color: #FBA921;
+	border-top: 1px solid;
+	border-bottom: 0 solid transparent;
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.62);
+}
+
+
+
+
+.sidebar
+{
+	width: 100% ;
+	min-height: 300%;
+	position: absolute;
+	z-index: 1;
+	background: #121212;
+	border-left-color: #000;
+}
+/*tulisan orange*/
+.sidebar-menu>li.header 
+{
+    font-weight: bold;
+    color: #FBA921;
+    background: #121212;
+    border-top: 1px solid;
+}
+
+
+/*warna hitam background kiri*/
+ .main-sidebar, .left-side {
+    background-color: #1B1B1B;
+    box-shadow: 2px 0px 12px rgba(0, 0, 0, 0.80);
+
+}
+
+ul
+{
+	padding: 0px ;
+	margin: -2px 0px 0px;
+}
+
+ul li
+{
+	list-style-type: none;
+	border-bottom: 1px solid rgba(225,225,225,.05);
+}
+
+ul li a
+{
+	color: #aeb2b7;
+	text-decoration: none;
+	display: block;
+	padding: 18px 0px 18px 25px;
+	transform: all 200ms ease-in;
+}
+ul li a:hover
+{
+	text-decoration: none;
+	color: #1abc9c;
+}
+
+ul li a:visited
+{
+	text-decoration: none;
+	color: #1abc9c;
+}
+
+ul li span
+{
+	display: inline-block;
+	margin-right: 20px;
+	
+}
+
+ul li a .fa-angle-down
+{
+	margin-right: 10px;
+	font-weight: bold;
+	color: #FBA921;
+	background: #121212;
+	border-top: 1px solid;
+}
+ul ul 
+{
+	display: none;
+
+}
+/*apabila media yang membuka memiliki lebar minimal 768px (laptop,lcd)*/
+@media (min-width: 768px )
+{
+	.sidebar
+	{
+		width: 240px;
+	}
+	.content
+	{
+		margin-left: 250px;
+
+	}
+	.inner
+	{
+		padding: 15px;	
+	}
+
+}
+
+.form-body{
+	padding: 1.4%;
+	background: rgb(0, 92, 159);
+	min-height: 250px;
+	border: 1px solid #000;
+	box-shadow: -2px 8px 12px rgba(0, 0, 0, 0.66);
+	/* border-bottom-right-radius: 10%; */
+	/* border-bottom-left-radius: 10%; */
+	border-bottom: 1px solid rgba(229, 75, 56, 0.85);
+} 
+
+.box {
+	position: relative;
+	border-radius: 3px;
+	background: #ffffff;
+	border-top: 3px solid #d2d6de;
+	margin-bottom: 20px;
+	width: 100%;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	border: 0;
+	border-radius: 0;
+
+	/*border-bottom-left-radius: 6%;*/
+	/*border-bottom-right-radius: 6%;*/
+}
+.login-box-body {
+	background: rgba(0, 0, 0, 0.68);
+	padding: 30px;
+	border-top: 0;
+	color: #FFF;
+}
+
+.content-header>h1>small {
+	font-size: 15px;
+	display: inline-block;
+	padding-left: 4px;
+	font-weight: 300;
+	color: #FBA921;
+
+	margin-top: 0.5%;
+}
+.content-header>h1 {
+	color: #015DA0;
+	margin: 0px;
+	font-size: 24px;
+	margin-left: 12px;
+}
+
+.add-table{
+	padding: 1%;
+	background: #E3E0E0;
+}
+
+.t-biru{
+	color: #005C9F;
+}
+
+
+
+
+
+/*warna biru atas kiri pendek*/
+.skin-yellow .main-header .logo {
+	background: #025088 ;
+	color: #fff;
+	border-bottom: 0 solid transparent;
+}
+
+
+.main-footer {
+    background: #005C9F;
+    background-size: contain;
+    padding: 15px;
+    color: #444;
+    border-top: 1px solid #FFFFFF;
+}
+
+
+.b-dash{
+    border-top: 1px solid #FFF;
+}
+
+
+
+.content-wrapper, .right-side {
+    min-height: 100%;
+    background: #FFF;
+    z-index: 800;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+}
+.skin-yellow .sidebar a {color: white; }
+.skin-yellow .treeview-menu>li>a {color: #FFFFFF;}
+
+.skin-yellow .sidebar-menu>li:hover>a, .skin-yellow .sidebar-menu>li.active>a {
+    color: #fff;
+    background: #1e282c;
+    border-left-color: #000;
+}
+.skin-yellow .sidebar-menu>li:hover>a, .skin-yellow .sidebar-menu>li.active>a {
+    color: #fff;
+    background: #005C9F;
+}
+
+
+.sidebar-menu>li:hover>a, .skin-yellow .sidebar-menu>li.active>a {
+    color: #FDC311;
+    background: #005C9F;
+    /*font-weight: bold;*/
+    transition: 0.5s;
+}
+
+.sidebar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 4%;
+    }
+
+
+.sidebar-menu>li>a {
+    
+    display: block;
+    }
+.form-horizontal .control-label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: right;
+    color: white;
+    }
+}
+.form-horizontal .control-label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: right;
+    color: white;
+    }
